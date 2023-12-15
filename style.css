@@ -23,6 +23,8 @@ html, body{
     height: 500px;
     position: relative;
     z-index: 99;
+    border-radius: 20px;
+    box-shadow: 20px 20px 100px 10px rgba(0, 0, 0, 0.879), inset -20px -20px 100px  rgba(29, 20, 12, 0.742);
 
 
 }
@@ -67,15 +69,15 @@ html, body{
 }
 #scroll-div2 h1{
     display: inline-block;
-    font-size: 170px;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 130px;
+    font-family:cursive;
     text-transform: uppercase;
     margin-right: 30px;
     letter-spacing: 2px;
     font-weight: 800;
     color: transparent;
     -webkit-text-stroke-width:3px ;
-    -webkit-text-stroke-color:black;
+    -webkit-text-stroke-color:rgb(213, 20, 20);
     animation-name: scroll ;
     animation-duration: 1.7s;
     animation-timing-function: linear;
@@ -91,7 +93,7 @@ html, body{
 }
 #scroll-div3 h1{
     display: inline-block;
-    font-size: 150px;
+    font-size: 180px;
     font-family: 'Dhurjati', sans-serif;
     text-transform: uppercase;
     margin-right: 30px;
@@ -143,4 +145,24 @@ html, body{
     transform: translateX(calc(-100% - 30px));
 
   }
+}
+
+@media (max-width:600px){
+    .main img{
+        width: 65vw;
+        height: auto;
+        margin-top: 40px;
+        border-radius: 20px;
+        box-shadow: 20px 20px 200px rgba(171, 86, 6, 0.879), inset -20px -20px 100px  rgba(29, 20, 12, 0.742);
+
+    }
+    #text{
+        font-size: 20px;
+    }
+    #scroll-div2 h1{
+        font-size: 75px;
+        letter-spacing: 20px;
+        -webkit-text-stroke-width:2px ;
+    }
+
 }
